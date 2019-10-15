@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <default sync-j="4" revision="thud"/>
+  <default sync-j="4" revision="warrior"/>
 
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/openembedded"  name="oe"/>
@@ -9,19 +9,20 @@
   <remote fetch="https://github.com/meta-qt5"      name="QT5"/>
   <remote fetch="https://github.com/OSSystems"     name="OSSystems"/>
   <remote fetch="https://github.com/sbabic"        name="sbabic"/>
-  <remote fetch="https://github.com/varigit"       name="variscite"/>
+  <remote fetch="https://bitbucket.org/adeneo-embedded"       name="witekio-variscite"/>
 
-  <project remote="yocto"     revision="50f33d3bfebcbfb1538d932fb487cfd789872026" upstream="thud"   name="poky"                    path="sources/poky"/>
-  <project remote="yocto"     revision="46fcbab00f7e01ded4609c09be89161783426f41" upstream="thud"   name="meta-freescale"          path="sources/meta-freescale"/>
-  <project remote="oe"        revision="4cd3a39f22a2712bfa8fc657d09fe2c7765a4005" upstream="thud"   name="meta-openembedded"       path="sources/meta-openembedded"/>
-  <project remote="freescale" revision="c4b5ac6b20e4245ce0630e9197313aaef999a331" upstream="thud"   name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty"/>
-  <project remote="freescale" revision="4a244af3993ae662624c6f615464e6806cc719a2" upstream="thud"   name="meta-freescale-distro"   path="sources/meta-freescale-distro"/>
-  <project remote="QT5"       revision="0630018c0033c91fddda62a49f59a82ba6ec6850" upstream="thud"   name="meta-qt5"                path="sources/meta-qt5"/>
+  <project remote="yocto"     revision="warrior"    name="poky"                    path="sources/poky"/>
+  <project remote="yocto"     revision="warrior"    name="meta-freescale"          path="sources/meta-freescale"/>
+  <project remote="oe"        revision="warrior"   name="meta-openembedded"       path="sources/meta-openembedded"/>
+  <project remote="freescale" revision="warrior"   name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty"/>
+  <project remote="freescale" revision="warrior"   name="meta-freescale-distro"   path="sources/meta-freescale-distro"/>
+  <project remote="QT5"       revision="warrior"  name="meta-qt5"                path="sources/meta-qt5"/>
   <project remote="OSSystems" revision="75640e14e325479c076b6272b646be7a239c18aa" upstream="master" name="meta-browser"            path="sources/meta-browser"/>
-  <project remote="sbabic"    revision="66af6e7e019b07b48facfd68be3c4ab2094502a4" upstream="thud"   name="meta-swupdate"           path="sources/meta-swupdate"/>
-  <project remote="variscite" revision="73bd1c1360d923d79c557850d6818756c5a85542" upstream="thud"   name="meta-variscite-fslc"     path="sources/meta-variscite-fslc"/>
+  <project remote="sbabic"    revision="warrior"  name="meta-swupdate"           path="sources/meta-swupdate"/>
+  <project remote="witekio-variscite" revision="warrior"   name="meta-variscite-fslc"     path="sources/meta-variscite-fslc"/>
+  <project remote="witekio-variscite" revision="warrior" name="variscite-bsp-base" path="sources/base">
+  <project remote="witekio-variscite" revision="warrior"   name="meta-sersa"     path="sources/meta-sersa"/>
 
-  <project remote="variscite" revision="pyro" name="variscite-bsp-base" path="sources/base">
 	<copyfile dest="README" src="README"/>
 	<copyfile dest="setup-environment" src="setup-environment"/>
   </project>
